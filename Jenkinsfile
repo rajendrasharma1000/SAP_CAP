@@ -4,7 +4,7 @@ pipeline {
     stage('Prepare')   {
          steps{
                 sh 'npm install'
-                java -jar /mta.jar --build-target XSA build
+                java -jar /mta.jar build
 		}
     }
    stage('Build')   {
