@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Prepare')   {
          steps{
-                sh 'npm install'
-                java -jar /mta.jar --mtar out.mtar --build-target XSA build
+                               
+		java -jar /path/to/mta.jar --mtar out.mtar --build-target XSA build
 		}
     }
    stage('Build')   {
