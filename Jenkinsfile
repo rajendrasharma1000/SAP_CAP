@@ -4,7 +4,7 @@ pipeline {
     stage('Prepare')   {
          steps{
                                
-		java -jar /path/to/mta.jar --mtar out.mtar --build-target XSA build
+		java -jar mta.jar --mtar out.mtar --build-target XSA build
 		}
     }
    stage('Build')   {
