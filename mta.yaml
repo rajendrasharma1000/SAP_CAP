@@ -43,8 +43,3 @@ resources:
     properties:
       hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container
-  - name: cpl166_uaa
-    type: com.sap.xs.uaa
-    parameters:
-      path: ./xs-security.json
-      service: xsuaa

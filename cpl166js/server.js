@@ -21,7 +21,7 @@ try {
 
 // configure UAA
 try {
-	options = Object.assign(options, xsenv.getServices({ uaa: {tag: "xsuaa"} }));
+	// options = Object.assign(options, xsenv.getServices({ uaa: {tag: "xsuaa"} }));
 	// options = xsjs.assign(options, xsenv.getServices({ uaa: {tag: "xsuaa"} }));
 } catch (err) {
 	console.log("[WARN]", err.message);
