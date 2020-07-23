@@ -1,0 +1,27 @@
+{
+	"xsappname": "CPL166MTA",
+	"scopes": [
+		{
+			"name": "$XSAPPNAME.view", 
+			"description": "View data" 
+		},
+		{
+			"name": "$XSAPPNAME.create",
+			"description": "Create data"
+		}
+		],
+	"role-templates": [
+		{
+			"name": "cpl166View",
+			"description": "Role for viewing data",
+			"scope-references": [ "$XSAPPNAME.view"]
+			
+		},
+		{
+			"name": "cpl166Create",
+			"description": "Role for creating data",
+			"scope-references": [ "$XSAPPNAME.create", "$XSAPPNAME.view"]
+		}
+		]
+	
+}
