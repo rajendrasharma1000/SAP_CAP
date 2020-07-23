@@ -1,3 +1,0 @@
-service {
-  "CPL166MTA.cpl166db::european_countries" as "euro" keys generate local "ID";
-}
