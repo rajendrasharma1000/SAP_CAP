@@ -36,6 +36,8 @@ resources:
     properties:
       hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container
+    parameters:
+      service: hanatrial
   - name: uaa_CPL166MTA
     parameters:
       path: ./xs-security.json
